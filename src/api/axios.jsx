@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://digimonnaie-backend-1.onrender.com",
+  baseURL: "https://digimonnaie-backend-1.onrender.com/api",
 });
 
 API.interceptors.request.use((config) => {
