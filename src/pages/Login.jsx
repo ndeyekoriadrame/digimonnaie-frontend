@@ -23,7 +23,7 @@ export default function Login() {
     setError("");
 
     try {
-      const res = await API.post("/auth/login", { email, password });
+      const res = await API.post("https://digimonnaie-backend-1.onrender.com/auth/login", { email, password });
       const { token, user } = res.data;
 
       // Stocker le token et info utilisateur dans localStorage
